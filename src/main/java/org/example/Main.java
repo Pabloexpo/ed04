@@ -1,5 +1,10 @@
 package org.example;
 
+/**
+ * Clase Main donde se ejecutan acciones para añadir contactos a la agenda, además de modificarlos y eliminarlos
+ * @author Pablo Expósito Martínez
+ * @see Agenda , Contacto
+ */
 public class Main {
     public static void main(String[] args) {
         // Crear una nueva agenda.
