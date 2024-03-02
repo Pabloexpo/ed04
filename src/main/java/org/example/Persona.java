@@ -3,18 +3,18 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 /**
- * Clase Contacto dedicada a generar un contacto con su nombre y número de teléfono
+ * Clase Persona dedicada a generar un contacto con su nombre y número de teléfono
  * además, hace un llamado de los contactos guardados, mostrando así su nombre y número de teléfono
  * @author Pablo Expósito Martínez
  * @see Agenda
  * @since 2024
  * @version 2024
  */
-public class Contacto {
+public class Persona {
     private String name;
     private List<String> phones;
 
-    public Contacto(String name, String phone) {
+    public Persona(String name, String phone) {
         this.name = name;
         this.phones = new ArrayList<>();
         this.phones.add(phone);
