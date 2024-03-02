@@ -20,6 +20,14 @@ public class Contacto {
         this.phones.add(phone);
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPhones(List<String> phones) {
+        this.phones = phones;
+    }
+
     /**
      * Método get del nombre del contacto
      * @return nombre del contacto
