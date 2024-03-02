@@ -12,7 +12,7 @@ import java.util.List;
  * @see Persona
  * @version 2024
  */
-public class Agenda {
+public class Agenda implements IAgenda {
     private List<Persona> contacts; // Lista de Contacto
 
 
@@ -25,6 +25,7 @@ public class Agenda {
      * @param name: nombre del contacto que se quiere realizar una acción sobre él
      * @param phone: número de teléfono del contacto sobre el que se va a realizar la acción
      */
+    @Override
     public void addContact(String name, String phone) {
         boolean exists = false;
         for (Persona c : contacts) {
@@ -47,6 +48,7 @@ public class Agenda {
      * @param name: nombre del contacto que se quiere eliminar
      */
 
+    @Override
     public void removeContact(String name) {
         Iterator<Persona> it = contacts.iterator();
 
@@ -66,6 +68,7 @@ public class Agenda {
      * @param newPhone: nuevo número de teléfono a guardar dentro del contacto seleccionado
      */
 
+    @Override
     public void modifyPhoneNumber(String name, String oldPhone, String newPhone) {
         for (Persona c : contacts) {
             if (c.getName().equalsIgnoreCase(name)) {
@@ -80,6 +83,7 @@ public class Agenda {
         }
     }
 
+    @Override
     public List<Persona> getContacts() {
         return this.contacts;
     }
