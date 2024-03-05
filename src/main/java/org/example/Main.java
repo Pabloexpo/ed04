@@ -3,7 +3,7 @@ package org.example;
 /**
  * Clase Main donde se ejecutan acciones para añadir contactos a la agenda, además de modificarlos y eliminarlos
  * @author Pablo Expósito Martínez
- * @see Agenda , Contacto
+ * @see Agenda , Persona
  */
 public class Main {
     public static void main(String[] args) {
@@ -31,7 +31,7 @@ public class Main {
         }
     }
 
-    private static Agenda initAgenda() {
+    private static Agenda initAgenda() { //Método donde se añaden contactos
         Agenda agendaContactos = new Agenda();
 
         // Añadir contactos a la agendaContactos.

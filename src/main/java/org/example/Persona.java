@@ -10,7 +10,7 @@ import java.util.List;
  * @since 2024
  * @version 2024
  */
-public class Persona {
+class Persona {
     private String name;
     private List<String> phones;
 
@@ -20,10 +20,18 @@ public class Persona {
         this.phones.add(phone);
     }
 
+    /**
+     * Método set destinado a modificar el nombre del contacto/persona
+     * @param name : nombre del contacto
+     */
     public void setName(String name) {
         this.name = name;
     }
 
+    /**
+     * Método set destinado a modificar el teléfono del contacto/persona
+     * @param phones: teléfono del contacto
+     */
     public void setPhones(List<String> phones) {
         this.phones = phones;
     }
